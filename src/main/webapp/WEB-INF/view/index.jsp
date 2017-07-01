@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,12 +16,9 @@
     </div>
     <div role="main" class="ui-context">
         <ul data-role="listview">
-            <li>项目1</li>
-            <li><a href="#">项目2</a></li>
-            <li><a href="#">项目3</a></li>
-            <li><a href="#">项目4</a></li>
-            <li><a href="#">项目5</a></li>
-            <li><a href="#">项目6</a></li>
+        <c:forEach var="entity" items="${users}">
+            <li><a href="#">${entity.username}</a></li>
+        </c:forEach>
         </ul>
     </div>
     <div data-role="footer" data-position="fixed">

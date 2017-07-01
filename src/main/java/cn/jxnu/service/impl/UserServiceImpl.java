@@ -1,5 +1,7 @@
 package cn.jxnu.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,11 @@ public class UserServiceImpl implements UserService {
 		userMapper.insertSelective(user);
 //		System.out.println(10 / 0); // 用于测试事务，不测试时注释
 //		userMapper.insertSelective(user);  // 用于测试事务，不测试时注释
+	}
+
+	@Override
+	public List<User> findAll() {
+		return userMapper.findAll();
 	}
 
 }

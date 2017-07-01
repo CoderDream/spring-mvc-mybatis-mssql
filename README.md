@@ -24,3 +24,9 @@ http://localhost:8080/
 ----------
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-mvc-mybatis-mssql/master/snapshot/sms_0201.png)
+
+
+第三个可用的版本（查询结果来自数据库）
+----------
+
+![](https://raw.githubusercontent.com/CoderDream/spring-mvc-mybatis-mssql/master/snapshot/sms_0301.png)
