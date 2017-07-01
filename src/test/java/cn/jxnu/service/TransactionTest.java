@@ -15,6 +15,7 @@ public class TransactionTest extends BaseTest {
 	public void transactionTest() {
 		// 在测试前，将 cn.jxnu.service.impl.UserServiceImpl.save(User) 中注释的代码去掉注释
 		User user = new User();
+		user.setId(20L);
 		user.setUsername("transaction_test");
 		user.setPassword("test");
 		user.setAge(10);
