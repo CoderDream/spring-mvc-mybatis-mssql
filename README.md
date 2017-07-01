@@ -1,6 +1,7 @@
 Spring MVC mybatis mssql
 
 第一个可用的版本
+----------
 
 ##### 运行方式 #####
 
@@ -17,3 +18,9 @@ http://localhost:8080/
 ![](https://raw.githubusercontent.com/CoderDream/spring-mvc-mybatis-mssql/master/snapshot/sms_0102.png)
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-mvc-mybatis-mssql/master/snapshot/sms_0103.png)
+
+
+第二个可用的版本（可用使用静态文件）
+----------
+
+![](https://raw.githubusercontent.com/CoderDream/spring-mvc-mybatis-mssql/master/snapshot/sms_0201.png)
