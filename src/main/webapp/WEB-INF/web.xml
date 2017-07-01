@@ -54,7 +54,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:applicationContext-servlet.xml</param-value>
+			<param-value>classpath:springmvc-servlet.xml</param-value>
 		</init-param>
 		<load-on-startup>2</load-on-startup>
 	</servlet>
@@ -62,7 +62,6 @@
 		<servlet-name>dispatcherServlet</servlet-name>
 		<url-pattern>/</url-pattern> <!-- 此处一定要用"/"，用"/*"不会报错，但是拦截不到请求 -->
 	</servlet-mapping>
-
 
 	<welcome-file-list>
 		<welcome-file></welcome-file>

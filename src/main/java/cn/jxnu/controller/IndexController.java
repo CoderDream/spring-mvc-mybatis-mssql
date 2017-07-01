@@ -8,6 +8,7 @@ public class IndexController {
 
 	@RequestMapping("/")
 	public String index() {
+		javax.servlet.jsp.jstl.core.Config c;
 		return "index";
 	}
 
