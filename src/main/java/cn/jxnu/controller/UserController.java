@@ -15,6 +15,11 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@RequestMapping("/index")
+	public String index() {
+		return "index";
+	}
+
 	@RequestMapping("/home")
 	public ModelAndView home(Long id) {
 		ModelAndView mav = new ModelAndView("user/home");
@@ -25,7 +30,10 @@ public class UserController {
 	@RequestMapping("/save")
 	public ModelAndView save(User user) {
 		ModelAndView mav = new ModelAndView("user/detail");
+		System.out.println(user);
 		userService.save(user);
+		System.out.println(user);
+		System.out.println("id \t" + user.getId());
 		mav.addObject("user", userService.selectByPK(user.getId()));
 		return mav;
 	}
